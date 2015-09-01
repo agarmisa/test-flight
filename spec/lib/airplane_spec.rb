@@ -3,7 +3,6 @@ require_relative "../../lib/airplane"
 
 describe Airplane do
   let(:airplane) { Airplane.new("cesna", 10, 150, 5) }
-  #let(:airplane_2) { Airplane.new("cesna", 10, 150, 2) }
 
   describe "#initialization" do
     it "builds a plane " do

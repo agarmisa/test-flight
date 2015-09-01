@@ -27,6 +27,7 @@ class Airplane
   def takeoff(engine)
     if engine != "off"
       @flight = "flying"
+      @fuel -= 1
       return "flying"
     else
       return "Please turn on your engine"
@@ -36,6 +37,7 @@ class Airplane
   def land(flight)
     if flight != "grounded"
       flight = "grounded"
+      @fuel -= 1
       return "Landing now!"
     else
       return "You're not even flying, dude."
